@@ -1,0 +1,75 @@
+import Image from "next/image";
+import { ellipse, line, logo, smallStar, star } from "@/public/icons";
+import Navbar from "@/components/elements/Navbar";
+import CustomeButton from "@/components/custom/CustomeButton";
+import { Minus } from "lucide-react";
+import BrandLogoSlider from "@/components/elements/BrandLogoSlider";
+import { HowWeWork } from "@/constant";
+import OurWork from "@/components/elements/OurWork";
+import Capabalities from "@/components/elements/Capabalities";
+
+export default function Home() {
+  return (
+    <div className="bg-[#1A1F25] min-h-screen p-5 overflow-x-hidden pb-20">
+      <Navbar />
+      <div className="w-full pt-24 pb-24 max-sm flex items-center justify-center flex-col space-y-5 relative top-0">
+        <div className="w-[300px] h-[300px] bg-primary opacity-50 rounded-full blur-3xl absolute top-24 "></div>
+
+        <h1 className="text-white font-bold lg:text-8xl md:text-6xl text-5xl  text-center relative z-10">
+          Bringing your <br /> dream into{" "}
+          <span className="text-primary">Reality</span>{" "}
+          <Image
+            src={star}
+            alt="star"
+            width={100}
+            height={100}
+            className="absolute md:h-24 md:w-24 h-12 w-12 animate-spin-slow  md:-right-10 -top-10"
+          />
+        </h1>
+        <p className="text-gray-300 text-center  z-10">
+          We increase revenue and ensure sustainable long-term growth for your
+          business through <br /> powerful websites , Ads and quality content.
+        </p>
+        <CustomeButton text="Book a Meeting" classNames="px-12" />
+        <Image
+          src={star}
+          alt="star"
+          width={50}
+          height={50}
+          className="absolute h-5 w-5 animate-spin-slow md:right-40 right-10 bottom-0"
+        />
+        <Image
+          src={star}
+          alt="star"
+          width={50}
+          height={50}
+          className="absolute h-5 w-5 animate-spin-slow  md:left-40 left-10 bottom-10"
+        />
+      </div>
+      {/* Performance  */}
+      <div className="space-y-5 mb-10">
+        <h3 className="flex items-center text-center justify-center space-x-2 text-gray-300">
+          <Image
+            src={line}
+            width={100}
+            height={2}
+            alt="line"
+            className="h-[.1rem] mr-2"
+          />
+          Our Performance is Certified By
+          <Image
+            src={line}
+            width={100}
+            height={2}
+            alt="line"
+            className="h-[.1rem] ml-2"
+          />{" "}
+        </h3>
+        <BrandLogoSlider />
+      </div>
+      <OurWork />
+      <Capabalities/>
+      {/* // Scroll  */}
+    </div>
+  );
+}
