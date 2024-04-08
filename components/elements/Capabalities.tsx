@@ -24,9 +24,7 @@ const CapabalitiesCard = ({
   key: number;
 }) => {
   return (
-    <div
-      className="max-w-[350px] mx-auto space-y-3 border border-primary p-3 rounded-lg backdrop-filter backdrop-blur-lg bg-gray-200 bg-opacity-10 pb-5"
-    >
+    <div className="max-w-[350px] mx-auto space-y-3 border border-primary p-3 rounded-lg backdrop-filter backdrop-blur-lg bg-gray-200 bg-opacity-10 pb-5" key={key}>
       <Image
         src={image}
         alt={title}
@@ -62,7 +60,7 @@ const Capabalities = () => {
           We can help you with..
         </h3>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1  gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1  gap-10 relative z-10">
           {Services.map((item, idx) => (
             <CapabalitiesCard
               image={item.image}
@@ -73,8 +71,8 @@ const Capabalities = () => {
             />
           ))}
         </div>
+        <GradientCircles />
       </Wrapper>
-      <GradientCircles />
     </div>
   );
 };

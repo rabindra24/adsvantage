@@ -215,44 +215,44 @@ export const BenefitsData = {
 
 export const BenefitsCardsData = [
   {
-    icons: <Infinity className="text-primary w-10 h-10 rounded-full border-2 border-primary p-2"/>,
+    icons: <Infinity className="text-white w-10 h-10 rounded-full border-2 border-primary p-2"/>,
     title: "On-demand requests",
     content:
       "Put all your requests in the design queue in Trello, and we’ll knock them out 1 by 1.",
   },
   {
-    icons: <Zap className="text-primary w-10 h-10 rounded-full border-2 border-primary p-2"/>,
+    icons: <Zap className="text-white w-10 h-10 rounded-full border-2 border-primary p-2"/>,
     title: "Top-notch quality",
     content: `High-end work from a dedicated team that &apos; s always available when you need it.`,
   },
   {
-    icons: <Airplay className="text-primary w-10 h-10 rounded-full border-2 border-primary p-2"/>,
+    icons: <Airplay className="text-white w-10 h-10 rounded-full border-2 border-primary p-2"/>,
     title: "Fast. Responsive. Reliable.",
     content: `Get regular updates on your projects and can expect to receive your projects within 2-3 days.`,
   },
   {
-    icons: <Calendar className="text-primary w-10 h-10 rounded-full border-2 border-primary p-2"/>,
+    icons: <Calendar className="text-white w-10 h-10 rounded-full border-2 border-primary p-2"/>,
     title: "On-demand requests",
     content:
       "Put all your requests in the design queue in Trello, and we’ll knock them out 1 by 1.",
   },
   {
-    icons: <CircleDollarSign className="text-primary w-10 h-10 rounded-full border-2 border-primary p-2"/>,
+    icons: <CircleDollarSign className="text-white w-10 h-10 rounded-full border-2 border-primary p-2"/>,
     title: "Great value for money",
     content: `Get the power of dedicated design team at fraction of the cost of full-time employee.`,
   },
   {
-    icons: <Settings className="text-primary w-10 h-10 rounded-full border-2 border-primary p-2"/>,
+    icons: <Settings className="text-white w-10 h-10 rounded-full border-2 border-primary p-2"/>,
     title: "Customized for you",
     content: `We design and build custom for you. We’re never starting from a template unless you want that? You don't, right?`,
   },
   {
-    icons: <HandCoins className="text-primary w-10 h-10 rounded-full border-2 border-primary p-2"/>,
+    icons: <HandCoins className="text-white w-10 h-10 rounded-full border-2 border-primary p-2"/>,
     title: "Creative paying",
     content: `We’re here when you need us and not on payroll when you don’t.`,
   },
   {
-    icons: <BriefcaseBusiness className="text-primary w-10 h-10 rounded-full border-2 border-primary p-2"/>,
+    icons: <BriefcaseBusiness className="text-white w-10 h-10 rounded-full border-2 border-primary p-2"/>,
     title: "Expert turnovers",
     content: `You’re getting 3+ years of  experience with every request. No hand-holding required.`,
   },

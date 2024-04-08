@@ -22,7 +22,7 @@ const OurWork = () => {
             <CustomeButton text="See Pricing" />
           </div>
         </div>
-        <div className="flex  md:flex-row flex-col max-md:gap-10 ">
+        <div className="flex  md:flex-row flex-col max-md:gap-10 relative z-10">
           {HowWeWork.process.map((item, idx) => (
             <div
               className="space-y-3 max-md:px-4 max-md:py-10  rounded-lg h-full w-full max-md:bg-gray-400  max-md:bg-clip-padding max-md:backdrop-filter max-md:backdrop-blur-lg max-md:bg-opacity-10 max-md:border max-md:border-primary"
@@ -56,8 +56,8 @@ const OurWork = () => {
             </div>
           ))}
         </div>
+        <GradientCircles />
       </Wrapper>
-      <GradientCircles />
     </div>
   );
 };
