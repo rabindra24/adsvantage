@@ -1,6 +1,7 @@
 // NavBar Elements
 
 import { curve, nextjs, revision, rocket, shopify, wordpress } from "@/public/icons";
+import { ads, seoImage, videoImage, webImage } from "@/public/images";
 import {
   Airplay,
   BriefcaseBusiness,
@@ -139,7 +140,7 @@ export const OutCapabilites = {
 
 export const Services = [
   {
-    image: "/public/images/SEO.gif",
+    image: seoImage,
     title: "SEO",
     content:
       "Elevate your online presence, automate workflows, and define digital brilliance with hassle-free SEO",
@@ -156,7 +157,7 @@ export const Services = [
     ],
   },
   {
-    image: "/public/images/video.gif",
+    image: videoImage,
     title: "Video Editing",
     content:
       "Elevate your online presence, automate workflows, and define digital brilliance with hassle-free SEO",
@@ -170,7 +171,7 @@ export const Services = [
     ],
   },
   {
-    image: "/public/images/web.gif",
+    image: webImage,
     title: "Website Development",
     content:
       "From tech wizardry to seamless online experiences – enter the world of Technical Solutions. We transform digital hiccups into high-fives for your users.",
@@ -187,7 +188,7 @@ export const Services = [
     ],
   },
   {
-    image: "/public/images/ads3.gif",
+    image: ads,
     title: "Social Media",
     content:
       "Ready to make your brand the talk of the social town? Dive into our Social Media Management expertise and let your brand resonate across digital platforms!",
@@ -204,7 +205,7 @@ export const Services = [
 
 // Benefits
 
-export const Benefits = {
+export const BenefitsData = {
   subtitle: "Benefits",
   title: "The design subscription that connects you to your dream team",
   content:
@@ -214,44 +215,44 @@ export const Benefits = {
 
 export const BenefitsCardsData = [
   {
-    icons: <Infinity />,
+    icons: <Infinity className="text-primary w-10 h-10 rounded-full border-2 border-primary p-2"/>,
     title: "On-demand requests",
     content:
       "Put all your requests in the design queue in Trello, and we’ll knock them out 1 by 1.",
   },
   {
-    icons: <Zap />,
+    icons: <Zap className="text-primary w-10 h-10 rounded-full border-2 border-primary p-2"/>,
     title: "Top-notch quality",
     content: `High-end work from a dedicated team that &apos; s always available when you need it.`,
   },
   {
-    icons: <Airplay />,
+    icons: <Airplay className="text-primary w-10 h-10 rounded-full border-2 border-primary p-2"/>,
     title: "Fast. Responsive. Reliable.",
     content: `Get regular updates on your projects and can expect to receive your projects within 2-3 days.`,
   },
   {
-    icons: <Calendar />,
+    icons: <Calendar className="text-primary w-10 h-10 rounded-full border-2 border-primary p-2"/>,
     title: "On-demand requests",
     content:
       "Put all your requests in the design queue in Trello, and we’ll knock them out 1 by 1.",
   },
   {
-    icons: <CircleDollarSign />,
+    icons: <CircleDollarSign className="text-primary w-10 h-10 rounded-full border-2 border-primary p-2"/>,
     title: "Great value for money",
     content: `Get the power of dedicated design team at fraction of the cost of full-time employee.`,
   },
   {
-    icons: <Settings />,
+    icons: <Settings className="text-primary w-10 h-10 rounded-full border-2 border-primary p-2"/>,
     title: "Customized for you",
     content: `We design and build custom for you. We’re never starting from a template unless you want that? You don't, right?`,
   },
   {
-    icons: <HandCoins />,
+    icons: <HandCoins className="text-primary w-10 h-10 rounded-full border-2 border-primary p-2"/>,
     title: "Creative paying",
     content: `We’re here when you need us and not on payroll when you don’t.`,
   },
   {
-    icons: <BriefcaseBusiness />,
+    icons: <BriefcaseBusiness className="text-primary w-10 h-10 rounded-full border-2 border-primary p-2"/>,
     title: "Expert turnovers",
     content: `You’re getting 3+ years of  experience with every request. No hand-holding required.`,
   },

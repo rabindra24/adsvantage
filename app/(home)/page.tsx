@@ -7,6 +7,7 @@ import BrandLogoSlider from "@/components/elements/BrandLogoSlider";
 import { HowWeWork } from "@/constant";
 import OurWork from "@/components/elements/OurWork";
 import Capabalities from "@/components/elements/Capabalities";
+import Benefits from "@/components/elements/Benefits";
 
 export default function Home() {
   return (
@@ -68,7 +69,8 @@ export default function Home() {
         <BrandLogoSlider />
       </div>
       <OurWork />
-      <Capabalities/>
+      <Capabalities />
+      <Benefits />
       {/* // Scroll  */}
     </div>
   );

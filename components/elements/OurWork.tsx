@@ -25,7 +25,7 @@ const OurWork = () => {
         <div className="flex  md:flex-row flex-col max-md:gap-10 ">
           {HowWeWork.process.map((item, idx) => (
             <div
-              className="space-y-3 max-md:px-4 max-md:py-10  rounded-lg h-full w-full max-md:bg-gray-400  max-md:bg-clip-padding max-md:backdrop-filter max-md:backdrop-blur-lg max-md:bg-opacity-10 max-md:border max-md:border-gray-100"
+              className="space-y-3 max-md:px-4 max-md:py-10  rounded-lg h-full w-full max-md:bg-gray-400  max-md:bg-clip-padding max-md:backdrop-filter max-md:backdrop-blur-lg max-md:bg-opacity-10 max-md:border max-md:border-primary"
               key={idx}
             >
               <div className="flex items-center ">
