@@ -139,37 +139,35 @@ export const OutCapabilites = {
 };
 
 export const Services = [
-  {
-    image: seoImage,
-    title: "SEO",
-    content:
-      "Elevate your online presence, automate workflows, and define digital brilliance with hassle-free SEO",
-    tags: [
-      {
-        title: "social Media",
-      },
-      {
-        title: "Ads",
-      },
-      {
-        title: "Video",
-      },
-    ],
-  },
-  {
-    image: videoImage,
-    title: "Video Editing",
-    content:
-      "Elevate your online presence, automate workflows, and define digital brilliance with hassle-free SEO",
-    tags: [
-      {
-        title: "Instagram Reels",
-      },
-      {
-        title: "Youtube",
-      },
-    ],
-  },
+  // {
+  //   image: seoImage,
+  //   title: "SEO",
+  //   content:
+  //     "Elevate your online presence, automate workflows, and define digital brilliance with hassle-free SEO",
+  //   tags: [
+  //     {
+  //       title: "social Media",
+  //     },
+  //     {
+  //       title: "Ads",
+  //     },
+    
+  //   ],
+  // },
+  // {
+  //   image: videoImage,
+  //   title: "Video Editing",
+  //   content:
+  //     "Elevate your online presence, automate workflows, and define digital brilliance with hassle-free SEO",
+  //   tags: [
+  //     {
+  //       title: "Instagram Reels",
+  //     },
+  //     {
+  //       title: "Youtube",
+  //     },
+  //   ],
+  // },
   {
     image: webImage,
     title: "Website Development",
@@ -198,6 +196,8 @@ export const Services = [
       },
       {
         title: "Google Ads",
+      },  {
+        title: "Video",
       },
     ],
   },
