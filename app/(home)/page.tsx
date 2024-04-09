@@ -8,6 +8,7 @@ import { HowWeWork } from "@/constant";
 import OurWork from "@/components/elements/OurWork";
 import Capabalities from "@/components/elements/Capabalities";
 import Benefits from "@/components/elements/Benefits";
+import Reviews from "@/components/elements/Reviews";
 
 export default function Home() {
   return (
@@ -71,6 +72,7 @@ export default function Home() {
       <OurWork />
       <Capabalities />
       <Benefits />
+      <Reviews />
       {/* // Scroll  */}
     </div>
   );
