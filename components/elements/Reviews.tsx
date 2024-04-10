@@ -44,6 +44,7 @@ const Reviews = () => {
                     src="/video.mp4"
                     className="md:h-[500px] h-auto w-full "
                     controls
+                    poster="https://reviewzone.media/wp-content/uploads/2022/12/Top-Product-Review-Channels-on-YouTube-1.jpg"
                   ></video>
                 </div>
               </CarouselItem>

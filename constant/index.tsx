@@ -27,10 +27,6 @@ export const NavElements = [
     link: "#services",
   },
   {
-    title: "Pricing",
-    link: "#pricing",
-  },
-  {
     title: "Contact",
     link: "#contact",
   },

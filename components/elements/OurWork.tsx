@@ -8,7 +8,7 @@ import GradientCircles from "./GradientCircles";
 
 const OurWork = () => {
   return (
-    <div className="relative">
+    <div className="relative" id="process">
       <Wrapper className=" z-10">
         <h3 className="text-primary text-lg md:text-md uppercase mb-5">
           {HowWeWork.title}

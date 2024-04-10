@@ -6,6 +6,8 @@ import GradientCircles from "./GradientCircles";
 
 const Benefits = () => {
   return (
+    <div id="benefits">
+
     <Wrapper>
       <h3 className="text-primary text-lg md:text-md uppercase mb-5">
         {BenefitsData.subtitle}
@@ -32,7 +34,8 @@ const Benefits = () => {
         ))}
       </div>
       <GradientCircles />
-    </Wrapper>
+    </Wrapper>    </div>
+
   );
 };
 

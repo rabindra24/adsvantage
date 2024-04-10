@@ -61,7 +61,7 @@ const Navbar = () => {
               <SheetDescription>
                 <ul className="flex text-left gap-10 mt-10 flex-col ">
                   {NavElements.map((item, idx) => (
-                    <SheetTrigger key={idx} asChild className="text-white cursor-pointer">
+                    <SheetTrigger key={idx} asChild className="text-white font-bold cursor-pointer">
                       <Link  href={item.link}>
                         {item.title}
                       </Link>
