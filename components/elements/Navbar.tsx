@@ -30,12 +30,19 @@ const Navbar = () => {
             <div className="md:flex gap-10 hidden">
               <ul className="flex items-center gap-10">
                 {NavElements.map((item, idx) => (
-                  <li key={idx} className="text-white text-lg cursor-pointer">
+                  <Link
+                    key={idx}
+                    href={item.link}
+                    className="text-white text-lg cursor-pointer"
+                  >
                     {item.title}
-                  </li>
+                  </Link>
                 ))}
               </ul>
-              <CustomeButton text="Get Started" />
+              <CustomeButton
+                text="Get Started"
+                link="https://wa.me/+917691961139"
+              />
             </div>
             <SheetTrigger className="md:hidden">
               <MenuIcon className="h-8 w-8 text-white font-bold " />
@@ -54,11 +61,11 @@ const Navbar = () => {
               <SheetDescription>
                 <ul className="flex text-left gap-10 mt-10 flex-col ">
                   {NavElements.map((item, idx) => (
-                    <Link key={idx} href={item.link}>
-                      <SheetClose className="text-white cursor-pointer">
+                    <SheetTrigger asChild className="text-white cursor-pointer">
+                      <Link key={idx} href={item.link}>
                         {item.title}
-                      </SheetClose>
-                    </Link>
+                      </Link>
+                    </SheetTrigger>
                   ))}
                 </ul>
               </SheetDescription>

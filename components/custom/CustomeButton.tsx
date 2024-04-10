@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const CustomeButton = ({
   text,
@@ -16,7 +17,7 @@ const CustomeButton = ({
     <Button
       className={` border-2 border-primary bg-transparent px-10 py-5 ${classNames}`}
     >
-      {text}
+      {link ? <Link href={link}>{text}</Link> : text}
     </Button>
   );
 };

@@ -34,7 +34,11 @@ export default function Home() {
           We increase revenue and ensure sustainable long-term growth for your
           business through <br /> powerful websites , Ads and quality content.
         </p>
-        <CustomeButton text="Book a Meeting" classNames="px-12" />
+        <CustomeButton
+          link="https://wa.me/+917691961139 "
+          text="Book a Meeting"
+          classNames="px-12"
+        />
         <Image
           src={star}
           alt="star"
@@ -75,8 +79,8 @@ export default function Home() {
       <Capabalities />
       <Benefits />
       <Reviews />
-      <Contact/>
-      <Footer/>
+      <Contact />
+      <Footer />
       {/* // Scroll  */}
     </div>
   );
