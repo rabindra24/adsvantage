@@ -5,10 +5,12 @@ const CustomeButton = ({
   text,
   link,
   classNames,
+  type,
 }: {
   text: string;
   link?: string;
   classNames?: string;
+  type?: string;
 }) => {
   return (
     <Button

@@ -431,3 +431,26 @@ export const FAQ = [
 export const Footer = {
   
 }
+
+export const ClientsReview = [
+  {
+    id : 1,
+    url : 'https://player.vimeo.com/video/844951057?h=691caf134d'
+  },
+  {
+    id : 2,
+    url : 'https://player.vimeo.com/video/918766171'
+  },
+  {
+    id : 3,
+    url : 'https://player.vimeo.com/video/844951057?h=691caf134d'
+  },
+  {
+    id : 4,
+    url : 'https://player.vimeo.com/video/918766171'
+  },
+  {
+    id : 5,
+    url : 'https://player.vimeo.com/video/844951057?h=691caf134d'
+  },
+]

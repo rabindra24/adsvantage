@@ -9,10 +9,12 @@ import OurWork from "@/components/elements/OurWork";
 import Capabalities from "@/components/elements/Capabalities";
 import Benefits from "@/components/elements/Benefits";
 import Reviews from "@/components/elements/Reviews";
+import Contact from "@/components/elements/Contact";
+import Footer from "@/components/elements/Footer";
 
 export default function Home() {
   return (
-    <div className="bg-[#1A1F25] min-h-screen p-5 overflow-x-hidden pb-20">
+    <div className="bg-[#1A1F25] min-h-screen p-5 overflow-x-hidden pb-2">
       <Navbar />
       <div className="w-full pt-24 pb-24 max-sm flex items-center justify-center flex-col space-y-5 relative top-0">
         <div className="w-[300px] h-[300px] bg-primary opacity-30 rounded-full blur-3xl absolute top-24 "></div>
@@ -73,6 +75,8 @@ export default function Home() {
       <Capabalities />
       <Benefits />
       <Reviews />
+      <Contact/>
+      <Footer/>
       {/* // Scroll  */}
     </div>
   );
