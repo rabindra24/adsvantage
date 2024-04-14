@@ -1,8 +1,7 @@
-import { result1, result3, result7, result8 } from "@/public/images";
 import { Image } from "react-grid-gallery";
 
 export interface CustomImage extends Image {
-  original: any;
+  original: string;
 }
 
 export const images: CustomImage[] = [
