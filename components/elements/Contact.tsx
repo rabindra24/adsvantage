@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -25,15 +25,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import Wrapper from "../custom/Wrapper";
-import Link from "next/link";
-import CustomeButton from "../custom/CustomeButton";
 import GradientCircles from "./GradientCircles";
-interface FormTypes {
-  username: string;
-  email: string;
-  query: string;
-  budget: string;
-}
+import { Loader2 } from "lucide-react";
 
 const formSchema = z.object({
   username: z.string().min(2).max(50),
@@ -43,6 +36,8 @@ const formSchema = z.object({
 });
 
 const Contact = () => {
+  const [submit, setSubmit] = useState(false);
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -55,6 +50,7 @@ const Contact = () => {
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
+      setSubmit(true);
       await fetch("/api/contact", {
         method: "POST",
         body: JSON.stringify(values),
@@ -64,9 +60,11 @@ const Contact = () => {
         },
       }).then((res: any) => {
         console.log(res);
+        setSubmit(false);
       });
     } catch (error) {
       alert(error);
+      setSubmit(false);
     }
   };
 
@@ -154,7 +152,14 @@ const Contact = () => {
                 </FormItem>
               )}
             />
-            <Button type="submit">Let&apos;s Connect</Button>
+            <div className="flex pt-3">
+              <Button type="submit" className={`${submit && "hidden"}`}>
+                Let&apos;s Connect
+              </Button>
+              <Button disabled className={`px-10 ${!submit && "hidden"}`}>
+                <Loader2 className="animate-spin" />{" "}
+              </Button>
+            </div>
           </form>
         </Form>
         <GradientCircles />

@@ -11,6 +11,7 @@ import Benefits from "@/components/elements/Benefits";
 import Reviews from "@/components/elements/Reviews";
 import Contact from "@/components/elements/Contact";
 import Footer from "@/components/elements/Footer";
+import GridImages from "@/components/elements/GridImages";
 
 export default function Home() {
   return (
@@ -79,6 +80,7 @@ export default function Home() {
       <Capabalities />
       <Benefits />
       <Reviews />
+      <GridImages/>
       <Contact />
       <Footer />
       {/* // Scroll  */}
