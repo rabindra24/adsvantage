@@ -15,16 +15,14 @@ const CapabalitiesCard = ({
   title,
   tags,
   content,
-  key,
 }: {
   image: any;
   title: string;
   tags: tags[];
   content: string;
-  key: number;
 }) => {
   return (
-    <div className="max-w-[350px] mx-auto space-y-3 border border-primary p-3 rounded-lg backdrop-filter backdrop-blur-lg bg-gray-200 bg-opacity-10 pb-5" key={key}>
+    <div className="max-w-[350px] mx-auto space-y-3 border border-primary p-3 rounded-lg backdrop-filter backdrop-blur-lg bg-gray-200 bg-opacity-10 pb-5">
       <Image
         src={image}
         alt={title}

@@ -14,11 +14,23 @@ const CustomeButton = ({
   type?: string;
 }) => {
   return (
-    <Button
-      className={` border-2 border-primary bg-transparent px-10 py-5 ${classNames}`}
-    >
-      {link ? <Link href={link}>{text}</Link> : text}
-    </Button>
+    <>
+      {link ? (
+        <Link href={link}>
+          <Button
+            className={` border-2 border-primary bg-transparent px-10 py-5 ${classNames}`}
+          >
+            {text}
+          </Button>
+        </Link>
+      ) : (
+        <Button
+          className={` border-2 border-primary bg-transparent px-10 py-5 ${classNames}`}
+        >
+          {text}
+        </Button>
+      )}
+    </>
   );
 };
 

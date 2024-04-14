@@ -22,7 +22,9 @@ import Autoplay from "embla-carousel-autoplay";
 import { ClientsReview } from "@/constant";
 
 const Reviews = () => {
-  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
+  const plugin = useRef(
+    Autoplay({ delay: 2000,  })
+  );
   return (
     <div id="review">
       <Wrapper className="">

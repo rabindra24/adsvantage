@@ -19,7 +19,7 @@ const OurWork = () => {
           </h4>
           <div className="space-y-6 ">
             <h5 className="text-gray-300">{HowWeWork.rightContent}</h5>
-            <CustomeButton text="See Pricing" />
+            <CustomeButton link="#contact" text="Contact Us" />
           </div>
         </div>
         <div className="flex  md:flex-row flex-col max-md:gap-10 relative z-10">

@@ -27,6 +27,7 @@ import {
 import Wrapper from "../custom/Wrapper";
 import GradientCircles from "./GradientCircles";
 import { Loader2 } from "lucide-react";
+import { useToast } from "@/components/ui/use-toast";
 
 const formSchema = z.object({
   username: z.string().min(2).max(50),
@@ -37,7 +38,7 @@ const formSchema = z.object({
 
 const Contact = () => {
   const [submit, setSubmit] = useState(false);
-
+  const { toast } = useToast();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -61,10 +62,19 @@ const Contact = () => {
       }).then((res: any) => {
         console.log(res);
         setSubmit(false);
+        toast({
+          title: "Form Submited Succesfully",
+          description: "We Will Connect with You 😉",
+        });
       });
     } catch (error) {
       alert(error);
       setSubmit(false);
+      toast({
+        variant : 'destructive',
+        title: "Something Went wrong",
+        description: "We Will Connect with You 😉",
+      });
     }
   };
 
@@ -77,6 +87,7 @@ const Contact = () => {
         <h4 className="text-gray-200 text-center font-bold md:text-4xl text-3xl  mb-10">
           Let&apos;s Bring Your Dream to Reality
         </h4>
+
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
