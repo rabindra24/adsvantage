@@ -7,8 +7,8 @@ export interface CustomImage extends Image {
 
 export const images: CustomImage[] = [
   {
-    src: result1,
-    original: result1,
+    src: '../public/images/result (1).png',
+    original: '../public/images/result (1).png',
     width: 320,
     height: 174,
     tags: [
@@ -18,22 +18,22 @@ export const images: CustomImage[] = [
     caption: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: result7,
-    original: result7,
+    src: '../public/images/result (1).png',
+    original: '../public/images/result (1).png',
     width: 320,
     height: 212,
     caption: "Boats (Jeshu John - designerspics.com)",
   },
   {
-    src: result8,
-    original: result8,
+    src: '../public/images/result (1).png',
+    original: '../public/images/result (1).png',
     width: 320,
     height: 212,
     caption: "Color Pencils (Jeshu John - designerspics.com)",
   },
   {
-    src: result3,
-    original: result3,
+    src: '../public/images/result (1).png',
+    original: '../public/images/result (1).png',
     width: 320,
     height: 213,
     caption: "Red Apples with other Red Fruit (foodiesfeed.com)",
