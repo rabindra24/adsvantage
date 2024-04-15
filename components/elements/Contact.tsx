@@ -81,12 +81,12 @@ const Contact = () => {
   return (
     <div id="contact">
       <Wrapper className="">
-        <h3 className="text-primary text-center text-md uppercase mb-2">
+        <h2 className="text-primary text-center text-md uppercase mb-2">
           Contact us
-        </h3>
-        <h4 className="text-gray-200 text-center font-bold md:text-4xl text-3xl  mb-10">
+        </h2>
+        <h3 className="text-gray-200 text-center font-bold md:text-4xl text-3xl  mb-10">
           Let&apos;s Bring Your Dream to Reality
-        </h4>
+        </h3>
 
         <Form {...form}>
           <form
@@ -138,7 +138,7 @@ const Contact = () => {
               name="budget"
               
               render={({ field }) => (
-                <FormItem className="bg-transparent">
+                <FormItem className="bg-transparent" >
                   <FormLabel>Budget</FormLabel>
 
                   <Select
@@ -148,7 +148,7 @@ const Contact = () => {
                   >
                     <FormControl className="bg-transparent border-primary backdrop-filter backdrop-blur-lg bg-gray-200 bg-opacity-10 ">
                       <SelectTrigger>
-                        <SelectValue placeholder="Select a range " />
+                        <SelectValue placeholder="Select a range " aria-label="budget-range"/>
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent aria-label="select-budget">

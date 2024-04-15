@@ -10,15 +10,15 @@ const OurWork = () => {
   return (
     <div className="relative" id="process">
       <Wrapper className=" z-10">
-        <h3 className="text-primary text-lg md:text-md uppercase mb-5">
+        <h2 className="text-primary text-lg md:text-md uppercase mb-5">
           {HowWeWork.title}
-        </h3>
+        </h2>
         <div className="flex md:flex-row flex-col gap-10 mb-20 pb-10  relative z-10">
-          <h4 className="text-gray-200 font-bold text-3xl">
+          <h3 className="text-gray-200 font-bold text-3xl">
             {HowWeWork.leftContent}
-          </h4>
+          </h3>
           <div className="space-y-6 ">
-            <h5 className="text-gray-300">{HowWeWork.rightContent}</h5>
+            <p className="text-gray-300">{HowWeWork.rightContent}</p>
             <CustomeButton link="#contact" text="Contact Us" />
           </div>
         </div>
@@ -49,9 +49,9 @@ const OurWork = () => {
                   />
                 )}
               </div>
-              <h3 className="text-gray-200 font-bold text-xl capitalize">
+              <h4 className="text-gray-200 font-bold text-xl capitalize">
                 {item.title}
-              </h3>
+              </h4>
               <h5 className="text-gray-400  md:pr-5">{item.content}</h5>
             </div>
           ))}

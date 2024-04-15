@@ -30,13 +30,15 @@ const Navbar = () => {
             <div className="md:flex gap-10 hidden">
               <ul className="flex items-center gap-10">
                 {NavElements.map((item, idx) => (
-                  <Link
-                    key={idx}
-                    href={item.link}
-                    className="text-white text-lg cursor-pointer"
-                  >
-                    <li>{item.title}</li>
-                  </Link>
+                  <li>
+                    <Link
+                      key={idx}
+                      href={item.link}
+                      className="text-white text-lg cursor-pointer"
+                    >
+                      {item.title}
+                    </Link>
+                  </li>
                 ))}
               </ul>
               <CustomeButton
@@ -44,8 +46,8 @@ const Navbar = () => {
                 link="https://wa.me/+917691961139"
               />
             </div>
-            <SheetTrigger className="md:hidden">
-              <MenuIcon className="h-8 w-8 text-white font-bold " />
+            <SheetTrigger className="md:hidden" aria-label="menu">
+              <MenuIcon className="h-8 w-8 text-white font-bold " aria-label="menuIcons" />
             </SheetTrigger>
           </div>
           <SheetContent className="h-full w-full bg-blue-300 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100 md:hidden">
@@ -61,15 +63,15 @@ const Navbar = () => {
               <SheetDescription>
                 <ul className="flex text-left gap-10 mt-10 flex-col ">
                   {NavElements.map((item, idx) => (
-                    <SheetTrigger
-                      key={idx}
-                      asChild
-                      className="text-white font-bold cursor-pointer"
-                    >
-                      <Link href={item.link}>
-                        <li>{item.title}</li>
-                      </Link>
-                    </SheetTrigger>
+                    <li>
+                      <SheetTrigger
+                        key={idx}
+                        asChild
+                        className="text-white font-bold cursor-pointer"
+                      >
+                        <Link href={item.link}>{item.title}</Link>
+                      </SheetTrigger>
+                    </li>
                   ))}
                 </ul>
               </SheetDescription>
