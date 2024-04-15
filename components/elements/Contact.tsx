@@ -136,6 +136,7 @@ const Contact = () => {
             <FormField
               control={form.control}
               name="budget"
+              
               render={({ field }) => (
                 <FormItem className="bg-transparent">
                   <FormLabel>Budget</FormLabel>
@@ -143,13 +144,14 @@ const Contact = () => {
                   <Select
                     onValueChange={field.onChange}
                     defaultValue={field.value}
+                    
                   >
                     <FormControl className="bg-transparent border-primary backdrop-filter backdrop-blur-lg bg-gray-200 bg-opacity-10 ">
                       <SelectTrigger>
                         <SelectValue placeholder="Select a range " />
                       </SelectTrigger>
                     </FormControl>
-                    <SelectContent>
+                    <SelectContent aria-label="select-budget">
                       <SelectItem value="Less than 10,000">
                         Less Then 10,000
                       </SelectItem>

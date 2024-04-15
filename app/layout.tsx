@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     "Elevate your brand with Adsvantage! Our team crafts tailored marketing solutions to boost your online presence. Contact us today for personalized strategies that drive results.",
   keywords:
     "HTML Template, site template, seo, marketing, creative, corporate, modern, multipurpose, one page, business, responsive, minimal, saas, startup",
+  metadataBase: new URL("https://adsvantage.vercel.app/"),
 };
 
 export default function RootLayout({
@@ -26,7 +27,7 @@ export default function RootLayout({
         {children}
         <Toaster />
         <Analytics />
-        <GoogleAnalytics measurementId="G-FX2X4EELQ4" />
+        <GoogleAnalytics measurementId={`${process.env.GOOGLE_ANALYTICS_ID}`} />
       </body>
     </html>
   );

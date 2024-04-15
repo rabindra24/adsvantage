@@ -33,7 +33,7 @@ const Footer = () => {
             {/* <a href="">
               <Facebook />
             </a> */}
-            <a href="https://www.instagram.com/adsvantage.in/">
+            <a href="https://www.instagram.com/adsvantage.in/" aria-label="Instagram">
               <Instagram />
             </a>
           </div>

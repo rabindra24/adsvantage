@@ -35,7 +35,7 @@ const Navbar = () => {
                     href={item.link}
                     className="text-white text-lg cursor-pointer"
                   >
-                    {item.title}
+                    <li>{item.title}</li>
                   </Link>
                 ))}
               </ul>
@@ -61,9 +61,13 @@ const Navbar = () => {
               <SheetDescription>
                 <ul className="flex text-left gap-10 mt-10 flex-col ">
                   {NavElements.map((item, idx) => (
-                    <SheetTrigger key={idx} asChild className="text-white font-bold cursor-pointer">
-                      <Link  href={item.link}>
-                        {item.title}
+                    <SheetTrigger
+                      key={idx}
+                      asChild
+                      className="text-white font-bold cursor-pointer"
+                    >
+                      <Link href={item.link}>
+                        <li>{item.title}</li>
                       </Link>
                     </SheetTrigger>
                   ))}
