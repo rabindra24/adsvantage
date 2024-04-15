@@ -6,18 +6,20 @@ import GoogleAnalytics from "@bradgarropy/next-google-analytics";
 import { Toaster } from "@/components/ui/toaster";
 
 const outfit = Outfit({ subsets: ["latin"] });
+const url = "https://adsvantage.vercel.app";
 
 export const metadata: Metadata = {
   title: "AdsVantage Marketing Agency || Performance Marketing Agency",
   description:
-    "Elevate your brand with Adsvantage! We specialize in marketing solutions to enhance your online presence. Reach out today for personalized strategies that deliver results.",
+    "Elevate your brand with Adsvantage We specialize in marketing solutions to enhance your online presence. Reach out today for personalized strategies.",
   keywords:
-    "marketing agency, seo, marketing, creative, Performance Marketing Agency, modern, multipurpose, one page, business, responsive, minimal, shopify websites, startup",
+    "marketing agency, seo, marketing, creative, Performance ,Reality, modern, multipurpose, one page, business, responsive, minimal, shopify websites, startup",
   metadataBase: new URL("https://adsvantage.vercel.app/"),
   category: "Marketing Agency",
+  alternates: {
+    canonical: "https://adsvantage.vercel.app",
+  },
 };
-
-const url = "https://adsvantage.vercel.app";
 
 const jsonLd = {
   "@context": "http://schema.org",

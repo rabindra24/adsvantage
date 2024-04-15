@@ -146,19 +146,19 @@ const Contact = () => {
                     defaultValue={field.value}
                     
                   >
-                    <FormControl className="bg-transparent border-primary backdrop-filter backdrop-blur-lg bg-gray-200 bg-opacity-10 ">
-                      <SelectTrigger>
+                    <FormControl className="bg-transparent border-primary backdrop-filter backdrop-blur-lg bg-gray-200 bg-opacity-10 " >
+                      <SelectTrigger aria-label="budget-trigger" aria-labelledby="choose-budget">
                         <SelectValue placeholder="Select a range " aria-label="budget-range"/>
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent aria-label="select-budget">
-                      <SelectItem value="Less than 10,000">
+                      <SelectItem aria-label="Less than 10,000" value="Less than 10,000">
                         Less Then 10,000
                       </SelectItem>
-                      <SelectItem value="> 10,000">More Then 10,000</SelectItem>
-                      <SelectItem value="> 20,000">More Then 20,000</SelectItem>
-                      <SelectItem value="> 30,000">More Then 30,000</SelectItem>
-                      <SelectItem value="> 50,000">More Then 40,000</SelectItem>
+                      <SelectItem aria-label="> 10,000" value="> 10,000">More Then 10,000</SelectItem>
+                      <SelectItem aria-label="> 20,000" value="> 20,000">More Then 20,000</SelectItem>
+                      <SelectItem aria-label="> 30,000" value="> 30,000">More Then 30,000</SelectItem>
+                      <SelectItem aria-label="> 50,000" value="> 50,000">More Then 40,000</SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />
@@ -170,13 +170,13 @@ const Contact = () => {
                 Let&apos;s Connect
               </Button>
               <Button disabled className={`px-10 ${!submit && "hidden"}`}>
-                <Loader2 className="animate-spin" />{" "}
+                <Loader2 className="animate-spin" aria-label="loader"/>
               </Button>
             </div>
           </form>
         </Form>
         <GradientCircles />
-      </Wrapper>{" "}
+      </Wrapper>
     </div>
   );
 };

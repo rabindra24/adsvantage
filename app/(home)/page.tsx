@@ -57,7 +57,7 @@ export default function Home() {
       </div>
       {/* Performance  */}
       <div className="space-y-5 mb-10">
-        <h3 className="flex items-center text-center justify-center space-x-2 text-gray-300">
+        <h2 className="flex items-center text-center justify-center space-x-2 text-gray-300">
           <Image
             src={line}
             width={100}
@@ -73,7 +73,7 @@ export default function Home() {
             alt="line"
             className="h-[.1rem] ml-2"
           />{" "}
-        </h3>
+        </h2>
         <BrandLogoSlider />
       </div>
       <OurWork />
