@@ -10,7 +10,7 @@ interface tags {
   title: string;
 }
 
-const CapabalitiesCard = ({
+export const CapabalitiesCard = ({
   image,
   title,
   tags,
@@ -18,7 +18,7 @@ const CapabalitiesCard = ({
 }: {
   image: any;
   title: string;
-  tags: tags[];
+  tags?: tags[];
   content: string;
 }) => {
   return (
@@ -33,7 +33,7 @@ const CapabalitiesCard = ({
       <h3 className="text-gray-200 text-2xl font-bold">{title}</h3>
       <p className="text-gray-300 text-sm capitalize">{content}</p>
       <div className="gap-2 flex mt-2">
-        {tags.map((item, idx) => (
+        {tags?.map((item, idx) => (
           <Badge
             variant="outline"
             className="rounded-sm border-primary text-gray-200 p-2 capitalize"

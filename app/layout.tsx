@@ -4,6 +4,9 @@ import { Outfit } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import GoogleAnalytics from "@bradgarropy/next-google-analytics";
 import { Toaster } from "@/components/ui/toaster";
+import Navbar from "@/components/elements/Navbar";
+import clsx from "clsx";
+import Footer from "@/components/elements/Footer";
 
 const outfit = Outfit({ subsets: ["latin"] });
 const url = "https://adsvantage.vercel.app";
@@ -52,8 +55,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={outfit.className}>
+      <body className={clsx(outfit.className,'bg-[#1A1F25]')}>
+        <Navbar />
         {children}
+        <Footer/>
         <Toaster />
         <Analytics />
         <GoogleAnalytics measurementId={`${process.env.GOOGLE_ANALYTICS_ID}`} />

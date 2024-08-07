@@ -39,11 +39,11 @@ const Reviews = () => {
           onMouseLeave={plugin.current.reset}
         >
           <CarouselContent>
-            {ClientsReview.map((_, index) => (
+            {ClientsReview.map((item, index) => (
               <CarouselItem key={index} className="bg-transparent p-0">
                 <div className="">
                   <video
-                    src="/video.mp4"
+                    src="https://static.videezy.com/system/resources/previews/000/000/168/original/Record.mp4"
                     className="md:h-[500px] h-auto w-full "
                     controls
                     poster="https://reviewzone.media/wp-content/uploads/2022/12/Top-Product-Review-Channels-on-YouTube-1.jpg"

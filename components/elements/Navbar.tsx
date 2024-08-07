@@ -20,13 +20,13 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="max-w-[1200px] mx-auto">
+    <div className="max-w-[1200px] mx-auto bg-[#1A1F25] py-5 px-5">
       <div>
         <Sheet>
           <div className="desktop flex justify-between items-center">
-            <div>
+            <Link href={'/'}>
               <Image src={logo} width={150} height={50} alt="Digital Agency" />
-            </div>
+            </Link>
             <div className="md:flex gap-10 hidden">
               <ul className="flex items-center gap-10">
                 {NavElements.map((item, idx) => (

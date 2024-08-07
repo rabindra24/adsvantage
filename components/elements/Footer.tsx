@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <Wrapper>
+    <Wrapper className="max-sm:px-5">
       <div className="flex justify-between md:flex-row flex-col gap-5">
         <div>
           <Link href="/">

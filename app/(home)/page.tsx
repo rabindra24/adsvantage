@@ -16,7 +16,6 @@ import GridImages from "@/components/elements/GridImages";
 export default function Home() {
   return (
     <div className="bg-[#1A1F25] min-h-screen p-5 overflow-x-hidden pb-2">
-      <Navbar />
       <div className="w-full pt-24 pb-24 max-sm flex items-center justify-center flex-col space-y-5 relative top-0">
         <div className="w-[300px] h-[300px] bg-primary opacity-30 rounded-full blur-3xl absolute top-24 "></div>
 
@@ -82,7 +81,6 @@ export default function Home() {
       <Reviews />
       <GridImages/>
       <Contact />
-      <Footer />
       {/* // Scroll  */}
     </div>
   );
