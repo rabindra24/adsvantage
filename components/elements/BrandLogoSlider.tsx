@@ -2,10 +2,21 @@
 import { Technologies } from "@/constant";
 import { wordpress } from "@/public/icons";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import Wrapper from "../custom/Wrapper";
+import { useToast } from "../ui/use-toast";
+import { ToastAction } from "../ui/toast";
 
 const BrandLogoSlider = () => {
+  // const { toast } = useToast();
+  // useEffect(() => {
+  //   toast({
+  //     title: "Scheduled: Catch up ",
+  //     description: "Friday, February 10, 2023 at 5:57 PM",
+  //     action: <ToastAction altText="Goto schedule to undo">Undo</ToastAction>,
+  //   });
+  // }, []);
+
   return (
     <Wrapper>
       <div

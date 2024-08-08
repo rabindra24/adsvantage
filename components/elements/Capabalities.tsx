@@ -10,7 +10,7 @@ interface tags {
   title: string;
 }
 
-export const CapabalitiesCard = ({
+const CapabalitiesCard = ({
   image,
   title,
   tags,
@@ -58,7 +58,7 @@ const Capabalities = () => {
           We can help you with..
         </h3>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1  gap-10 relative z-10 ">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1  gap-10 relative z-10 ">
           {Services.map((item, idx) => (
             <CapabalitiesCard
               image={item.image}

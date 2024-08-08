@@ -36,7 +36,7 @@ export default function Home() {
         </p>
         <CustomeButton
           link="https://wa.me/+917691961139 "
-          text="Book a Meeting"
+          text="Free Chatbot – Click Here!"
           classNames="px-12"
         />
         <Image

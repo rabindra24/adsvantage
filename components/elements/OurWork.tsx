@@ -56,6 +56,14 @@ const OurWork = () => {
             </div>
           ))}
         </div>
+        <div className="w-full flex items-center justify-center py-10">
+          <CustomeButton
+            link="#contact"
+            text="Contact Us"
+            classNames="mx-auto"
+          />
+        </div>
+
         <GradientCircles />
       </Wrapper>
     </div>

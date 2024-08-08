@@ -23,24 +23,24 @@ import {
 export const NavElements = [
   {
     title: "How We Work",
-    link: "#process",
+    link: "/#process",
   },
   {
     title: "About Us",
-    link: "about",
+    link: "/about",
   },
   {
     title: "Services",
-    link: "#services",
+    link: "/#services",
   },
   {
     title: "Contact",
-    link: "#contact",
+    link: "/#contact",
   },
-  {
-    title: "FAQ",
-    link: "#faq",
-  },
+  // {
+  //   title: "FAQ",
+  //   link: "/#faq",
+  // },
 ];
 
 // Techonologies
@@ -173,7 +173,7 @@ export const Services = [
   // },
   {
     image: webImage,
-    title: "Website Development",
+    title: "Web development with free customized chat bot",
     content:
       "From tech wizardry to seamless online experiences – enter the world of Technical Solutions. We transform digital hiccups into high-fives for your users.",
     tags: [
@@ -190,7 +190,7 @@ export const Services = [
   },
   {
     image: ads,
-    title: "Social Media",
+    title: "FB Ads with free creative and strategy creation",
     content:
       "Ready to make your brand the talk of the social town? Dive into our Social Media Management expertise and let your brand resonate across digital platforms!",
     tags: [
@@ -200,8 +200,39 @@ export const Services = [
       {
         title: "Google Ads",
       },
+    ],
+  },
+  {
+    image: videoImage,
+    title: "High end video editing",
+    content:
+      "Ready to make your brand the talk of the social town? Dive into our Social Media Management expertise and let your brand resonate across digital platforms!",
+    tags: [
       {
-        title: "Video",
+        title: "Reels",
+      },
+      {
+        title: "Advertising Video",
+      },
+      {
+        title: "Advertising Video",
+      },
+    ],
+  },
+  {
+    image: videoImage,
+    title: "Marketing ",
+    content:
+      "Ready to make your brand the talk of the social town? Dive into our Social Media Management expertise and let your brand resonate across digital platforms!",
+    tags: [
+      {
+        title: "Reels",
+      },
+      {
+        title: "Advertising Video",
+      },
+      {
+        title: "Advertising Video",
       },
     ],
   },
@@ -488,7 +519,7 @@ export const OurTeam = [
     ],
   },
   {
-    image: videoImage,
+    image: '/images/ccc.jpeg',
     title: "Rabindra Nath Mahato",
     content:
       "DEVELOPER",
@@ -502,7 +533,7 @@ export const OurTeam = [
     ],
   },
   {
-    image: webImage,
+    image: videoImage,
     title: "Gandharv Sing Parmar",
     content:
       "Digital Creator",
