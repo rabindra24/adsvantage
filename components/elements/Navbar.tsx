@@ -68,7 +68,7 @@ const Navbar = () => {
                     <li key={idx}>
                       <SheetTrigger
                         asChild
-                        className="text-white font-bold cursor-pointer"
+                        className="text-white font-bold cursor-pointer text-xl capitalize"
                       >
                         <Link href={item.link}>{item.title}</Link>
                       </SheetTrigger>

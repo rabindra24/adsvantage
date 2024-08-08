@@ -12,6 +12,7 @@ import Reviews from "@/components/elements/Reviews";
 import Contact from "@/components/elements/Contact";
 import Footer from "@/components/elements/Footer";
 import GridImages from "@/components/elements/GridImages";
+import CompanyLogoSlider from "@/components/elements/CompanyLogoSlider";
 
 export default function Home() {
   return (
@@ -36,7 +37,7 @@ export default function Home() {
         </p>
         <CustomeButton
           link="https://wa.me/+917691961139 "
-          text="Free Chatbot – Click Here!"
+          text="Free Chatbot – Get Started!"
           classNames="px-12"
         />
         <Image
@@ -76,6 +77,7 @@ export default function Home() {
         <BrandLogoSlider />
       </div>
       <OurWork />
+      <CompanyLogoSlider/>
       <Capabalities />
       <Benefits />
       <Reviews />

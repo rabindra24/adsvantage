@@ -1,7 +1,24 @@
 // NavBar Elements
 
 import {
+  af,
+  bharosa,
+  blisstouch,
+  bravo,
+  cartone,
+  delightfoldecor,
+  leaf,
+  rendjewel,
+  tf,
+  urban,
+  gapain,
+  soulmateselect,
+  coding,
+} from "@/public/brands";
+import {
   curve,
+  google,
+  meta,
   nextjs,
   revision,
   rocket,
@@ -34,6 +51,10 @@ export const NavElements = [
     link: "/#services",
   },
   {
+    title: "Case Studies",
+    link: "/casestudies",
+  },
+  {
     title: "Contact",
     link: "/#contact",
   },
@@ -58,18 +79,18 @@ export const Technologies = [
   },
   {
     id: 3,
-    title: "NextJS",
+    title: "Vercel",
     image: nextjs,
   },
   {
-    id: 1,
-    title: "Wordpress",
-    image: wordpress,
+    id: 4,
+    title: "Google",
+    image: google,
   },
   {
-    id: 2,
-    title: "Shopify",
-    image: shopify,
+    id: 5,
+    title: "Meta",
+    image: meta,
   },
   {
     id: 3,
@@ -98,6 +119,12 @@ export const HowWeWork = {
       title: "Polished designs - on time",
       content:
         "Our designers get to work to deliver your request. Receive your design within a few days.",
+    },
+    {
+      image: revision,
+      title: "Revisions made simple",
+      content:
+        "Custom designs, prompt replies and as many revisions as you need.",
     },
     {
       image: revision,
@@ -140,6 +167,62 @@ export const OutCapabilites = {
     },
   ],
 };
+
+/// Usp
+
+export const Usp = [
+  {
+    icons: (
+      <Infinity className="text-white w-10 h-10 rounded-full border-2 border-primary p-2" />
+    ),
+    title: "Providing Chat BOTs FREE",
+    content:
+      "Put all your requests in the design queue in Trello, and we’ll knock them out 1 by 1.",
+  },
+  {
+    icons: (
+      <Zap className="text-white w-10 h-10 rounded-full border-2 border-primary p-2" />
+    ),
+    title: "Best princess",
+    content: `High-end work from a dedicated team that &apos; s always available when you need it.`,
+  },
+  {
+    icons: (
+      <Airplay className="text-white w-10 h-10 rounded-full border-2 border-primary p-2" />
+    ),
+    title: "Fast. Responsive. Reliable.",
+    content: `Get regular updates on your projects and can expect to receive your projects within 2-3 days.`,
+  },
+  {
+    icons: (
+      <Calendar className="text-white w-10 h-10 rounded-full border-2 border-primary p-2" />
+    ),
+    title: "Customer support lifetime",
+    content:
+      "Put all your requests in the design queue in Trello, and we’ll knock them out 1 by 1.",
+  },
+  {
+    icons: (
+      <CircleDollarSign className="text-white w-10 h-10 rounded-full border-2 border-primary p-2" />
+    ),
+    title: "Free maintenance ",
+    content: `Get the power of dedicated design team at fraction of the cost of full-time employee.`,
+  },
+  {
+    icons: (
+      <Settings className="text-white w-10 h-10 rounded-full border-2 border-primary p-2" />
+    ),
+    title: "Other services for free EX lead Gen free for 14 Days",
+    content: `We design and build custom for you. We’re never starting from a template unless you want that? You don't, right?`,
+  },
+  {
+    icons: (
+      <BriefcaseBusiness className="text-white w-10 h-10 rounded-full border-2 border-primary p-2" />
+    ),
+    title: "Expert turnovers",
+    content: `You’re getting 3+ years of  experience with every request. No hand-holding required.`,
+  },
+];
 
 export const Services = [
   // {
@@ -184,7 +267,7 @@ export const Services = [
         title: "Shopify",
       },
       {
-        title: "Nextjs",
+        title: "FREE CHATBOT",
       },
     ],
   },
@@ -519,10 +602,9 @@ export const OurTeam = [
     ],
   },
   {
-    image: '/images/ccc.jpeg',
+    image: "/images/ccc.jpeg",
     title: "Rabindra Nath Mahato",
-    content:
-      "DEVELOPER",
+    content: "DEVELOPER",
     tags: [
       {
         title: "Websites",
@@ -535,8 +617,7 @@ export const OurTeam = [
   {
     image: videoImage,
     title: "Gandharv Sing Parmar",
-    content:
-      "Digital Creator",
+    content: "Digital Creator",
     tags: [
       {
         title: "Video Editing",
@@ -545,5 +626,75 @@ export const OurTeam = [
         title: "Videographer",
       },
     ],
+  },
+];
+
+// Brand Sliders
+
+export const Brands = [
+  {
+    id: 1,
+    title: "TF",
+    image: tf,
+  },
+  {
+    id: 2,
+    title: "urban",
+    image: urban,
+  },
+  {
+    id: 3,
+    title: "Saanjh",
+    image: leaf,
+  },
+  {
+    id: 4,
+    title: "AF",
+    image: af,
+  },
+  {
+    id: 5,
+    title: "Cartone",
+    image: cartone,
+  },
+  {
+    id: 6,
+    title: "bravo Post",
+    image: bravo,
+  },
+  {
+    id: 7,
+    title: "TrendJewel",
+    image: rendjewel,
+  },
+  {
+    id: 8,
+    title: "BlissTouch Pro",
+    image: blisstouch,
+  },
+  {
+    id: 9,
+    title: "DelightFoldDecor",
+    image: delightfoldecor,
+  },
+  {
+    id: 10,
+    title: "Bharosa Bazar",
+    image: bharosa,
+  },
+  {
+    id: 11,
+    title: "Gopainaway",
+    image: gapain,
+  },
+  {
+    id: 12,
+    title: "Soulmateselect",
+    image: soulmateselect,
+  },
+  {
+    id: 12,
+    title: "Coding Chroma",
+    image: coding,
   },
 ];

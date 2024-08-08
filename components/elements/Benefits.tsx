@@ -1,4 +1,4 @@
-import { BenefitsCardsData, BenefitsData } from "@/constant";
+import { BenefitsCardsData, BenefitsData, Usp } from "@/constant";
 import React from "react";
 import CustomeButton from "../custom/CustomeButton";
 import Wrapper from "../custom/Wrapper";
@@ -21,7 +21,7 @@ const Benefits = () => {
           </div>
         </div>
         <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 relative z-10">
-          {BenefitsCardsData.map((item, idx) => (
+          {Usp.map((item, idx) => (
             <div
               className="space-y-3 rounded-lg h-full w-full bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-10 border border-primary p-4"
               key={idx}

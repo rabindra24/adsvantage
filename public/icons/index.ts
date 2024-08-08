@@ -11,6 +11,8 @@ import smallStar from "./smallstar.png";
 import ellipse from "./ellipse.png";
 import line from "./line.png";
 import arrow from "./arrow.png";
+import google from './google.png'
+import meta from './meta.png'
 
 export {
   curve,
@@ -26,4 +28,6 @@ export {
   ellipse,
   line,
   arrow,
+  meta,
+  google
 };

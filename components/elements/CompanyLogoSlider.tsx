@@ -1,5 +1,5 @@
 "use client";
-import { Technologies } from "@/constant";
+import { Brands, Technologies } from "@/constant";
 import { wordpress } from "@/public/icons";
 import Image from "next/image";
 import React, { useEffect } from "react";
@@ -7,7 +7,7 @@ import Wrapper from "../custom/Wrapper";
 import { useToast } from "../ui/use-toast";
 import { ToastAction } from "../ui/toast";
 
-const BrandLogoSlider = () => {
+const CompanyLK = () => {
   // const { toast } = useToast();
   // useEffect(() => {
   //   toast({
@@ -18,8 +18,11 @@ const BrandLogoSlider = () => {
   // }, []);
 
   return (
-    <Wrapper>
-  
+    <Wrapper className="py-20">
+             {/* <h3 className="text-primary text-md uppercase mb-10">Our Clients</h3> */}
+        <h4 className="text-gray-200 font-bold md:text-4xl text-3xl  mb-10">
+          Our Clients
+        </h4>
       <div
         x-init="$nextTick(() => {
         let ul = $refs.logos;
@@ -29,16 +32,18 @@ const BrandLogoSlider = () => {
         className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] relative z-10 gap-5"
       >
         <div className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll space-x-6 ">
-          {Technologies.map((item, idx) => (
-            <div className="flex gap-5 flex-row items-center " key={idx}>
+          {Brands.map((item, idx) => (
+            <div
+              className="flex gap-5 flex-row items-center justify-center grayscale hover:grayscale-0"
+              key={idx}
+            >
               <Image
                 src={item.image}
-                width={40}
+                width={100}
                 height={40}
                 alt={item.title}
-                className="grayscale-0"
+                className="grayscale-0 max-h-[50px] object-contain "
               />
-              <h3 className="text-white font-bold ">{item.title}</h3>
             </div>
           ))}
         </div>
@@ -46,16 +51,18 @@ const BrandLogoSlider = () => {
           className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll space-x-6"
           aria-hidden="true"
         >
-          {Technologies.map((item, idx) => (
-            <div className="flex gap-5 flex-row items-center " key={idx}>
+          {Brands.map((item, idx) => (
+            <div
+              className="flex gap-5 flex-row items-center justify-center grayscale hover:grayscale-0"
+              key={idx}
+            >
               <Image
                 src={item.image}
-                width={40}
+                width={100}
                 height={40}
                 alt={item.title}
-                className="grayscale-0"
+                className="grayscale-0 max-h-[50px] object-contain"
               />
-              <h3 className="text-white font-bold ">{item.title}</h3>
             </div>
           ))}
         </div>
@@ -65,4 +72,4 @@ const BrandLogoSlider = () => {
   );
 };
 
-export default BrandLogoSlider;
+export default CompanyLK;

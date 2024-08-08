@@ -10,7 +10,7 @@ interface tags {
   title: string;
 }
 
-export const CapabalitiesCard = ({
+const UsersCard = ({
   image,
   title,
   tags,
@@ -18,7 +18,7 @@ export const CapabalitiesCard = ({
 }: {
   image: any;
   title: string;
-  tags?: tags[];
+  tags?: tags[] | undefined;
   content: string;
 }) => {
   return (
@@ -56,7 +56,7 @@ const page = () => {
             About Us
           </h1>
           <p className="mt-4 max-w-3xl text-muted-foreground text-left text-lg sm:text-xl">
-            At Adsvantage, we're a team of three friends united by a shared
+            At Adsvantage, we&apos;re a team of three friends united by a shared
             passion for digital innovation. Our journey began with a vision to
             provide comprehensive digital solutions at the most affordable
             prices. Our CEO, CMO, and founder leads the charge in crafting
@@ -70,7 +70,7 @@ const page = () => {
             e-commerce and real estate sectors, thrive in the digital world. We
             offer a full spectrum of services, including performance marketing,
             website development, and video editing, tailored to meet your unique
-            needs. At Adsvantage, we don't just deliver digital solutions; we
+            needs. At Adsvantage, we don&apos;t just deliver digital solutions; we
             build lasting partnerships, driven by our commitment to quality,
             creativity, and affordability.
           </p>
@@ -82,7 +82,7 @@ const page = () => {
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1  gap-10 relative z-10 ">
               {OurTeam?.map((item, idx) => (
-                <CapabalitiesCard
+                <UsersCard
                   image={item.image}
                   title={item.title}
                   tags={item.tags}
