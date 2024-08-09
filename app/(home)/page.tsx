@@ -76,12 +76,32 @@ export default function Home() {
         </h2>
         <BrandLogoSlider />
       </div>
-      <OurWork />
-      <CompanyLogoSlider/>
+      {/* <OurWork /> */}
       <Capabalities />
+      <div className="space-y-5 mb-10">
+        <h2 className="flex items-center text-center justify-center space-x-2 text-gray-300">
+          <Image
+            src={line}
+            width={100}
+            height={2}
+            alt="line"
+            className="h-[.1rem] mr-2"
+          />
+          We Work With
+          <Image
+            src={line}
+            width={100}
+            height={2}
+            alt="line"
+            className="h-[.1rem] ml-2"
+          />
+        </h2>
+        <CompanyLogoSlider />
+      </div>
+
       <Benefits />
       <Reviews />
-      <GridImages/>
+      <GridImages />
       <Contact />
       {/* // Scroll  */}
     </div>

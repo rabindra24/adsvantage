@@ -62,3 +62,61 @@
 *{
   scroll-behavior: smooth;
 }
+
+.markdown-container {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #f0f0f0; /* Light text color for dark background */
+}
+
+/* Styling for headings */
+.markdown-container h1,
+.markdown-container h2,
+.markdown-container h3 {
+  font-size: 2em; /* Large font size for h1 */
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: left; /* Align text to the left */
+  color: #ffffff; /* Pure white for headings */
+}
+
+/* General text styling */
+.markdown-container p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  text-align: justify;
+  color: #e0e0e0; /* Slightly lighter color for regular text */
+}
+
+/* Bold text */
+.markdown-container strong {
+  font-weight: 700; /* Ensures bold text is prominent */
+}
+
+/* Ordered and unordered lists */
+.markdown-container ol,
+.markdown-container ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  color: #f0f0f0; /* Light text color for list items */
+}
+
+/* List items */
+.markdown-container li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Styling for span elements */
+.markdown-container span {
+  font-weight: 400;
+  font-size: 1.1em;
+  color: #d0d0d0; /* Slightly darker gray for less prominent text */
+}
+
+/* Additional spacing between sections */
+.markdown-container br + p {
+  margin-top: 20px;
+}

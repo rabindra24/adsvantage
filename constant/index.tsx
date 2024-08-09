@@ -302,23 +302,23 @@ export const Services = [
       },
     ],
   },
-  {
-    image: videoImage,
-    title: "Marketing ",
-    content:
-      "Ready to make your brand the talk of the social town? Dive into our Social Media Management expertise and let your brand resonate across digital platforms!",
-    tags: [
-      {
-        title: "Reels",
-      },
-      {
-        title: "Advertising Video",
-      },
-      {
-        title: "Advertising Video",
-      },
-    ],
-  },
+  // {
+  //   image: videoImage,
+  //   title: "Marketing ",
+  //   content:
+  //     "Ready to make your brand the talk of the social town? Dive into our Social Media Management expertise and let your brand resonate across digital platforms!",
+  //   tags: [
+  //     {
+  //       title: "Reels",
+  //     },
+  //     {
+  //       title: "Advertising Video",
+  //     },
+  //     {
+  //       title: "Advertising Video",
+  //     },
+  //   ],
+  // },
 ];
 
 // Benefits
@@ -696,5 +696,92 @@ export const Brands = [
     id: 12,
     title: "Coding Chroma",
     image: coding,
+  },
+];
+
+// Case Studies
+
+export const CaseStudy = [
+  {
+    id: 1,
+    title: "Transforming Negative ROAS to Positive Growth",
+    date: "May 1, 2024",
+    image: "/images/ccc.jpeg",
+    author: "Anshul Yadav",
+    position: "CEO",
+    shortDesc:
+      "Our client was struggling with a negative Return on Ad Spend (ROAS) due to ineffective conversion campaigns. They needed a strategic overhaul to improve their digital marketing outcomes...Read more.",
+    content: `<h1><strong>Case Study: Transforming Negative ROAS to Positive Growth</strong></h1>
+    Client Overview:<span style="font-weight: 400;"> Our client was struggling with a negative Return on Ad Spend (ROAS) due to ineffective conversion campaigns. They needed a strategic overhaul to improve their digital marketing outcomes.</span>
+    <p><strong>Challenge:</strong><span style="font-weight: 400;"> The client's existing strategy wasn't delivering the desired results, with an initial conversion rate of only 10-15%. They needed a solution to turn around their performance and achieve a positive ROAS.</span></p>
+    <p><strong>Solution:</strong></p>
+    <ol>
+    <li><strong>Deep Analysis:</strong><span style="font-weight: 400;"> We conducted a thorough study to identify pain points and gaps in the current strategy.</span></li>
+    <li><strong>Strategy Shift:</strong><span style="font-weight: 400;"> We transitioned from conversion campaigns to lead generation ads. Additionally, we implemented personalized calls to leads by the sales team.</span></li>
+    <li><strong>Product Customization:</strong><span style="font-weight: 400;"> To further boost engagement, we introduced options for product customization.</span></li>
+    </ol>
+    <p><strong>Results:</strong></p>
+    <ul>
+    <li><strong>Initial Conversion Rate:</strong><span style="font-weight: 400;"> 10-15%</span></li>
+    <li><strong>Post-Optimization Conversion Rate:</strong><span style="font-weight: 400;"> 30-35%</span></li>
+    <li><strong>Initial Investment:</strong><span style="font-weight: 400;"> $1800</span></li>
+    <li><strong>Revenue Generated:</strong><span style="font-weight: 400;"> Over $11,000</span></li>
+    <li><strong>Achieved ROAS:</strong><span style="font-weight: 400;"> More than 6x</span></li>
+    </ul>
+    <br /><strong>Key Insights:</strong><span style="font-weight: 400;"> The shift to lead generation ads and personalized calls significantly improved the conversion rate from 10-15% to 30-35%. Product customization also played a crucial role in enhancing customer engagement.</span><br /><span style="font-weight: 400;">This transformation showcases our commitment to understanding and addressing our client's unique business needs, delivering tailored solutions that drive tangible results.</span>`,
+  },
+  {
+    id: 2,
+    title: "Achieving 15+ ROAS for a Kid Toy Brand",
+    date: "Dec 28, 2023",
+    author: "Anshul Yadav",
+    image: "/images/ccc.jpeg",
+
+    position: "CEO",
+    shortDesc:
+      " A kid toy brand sought to scale their business and achieve a profitable return on ad spend (ROAS)...Read more.",
+    content: `<h3><strong>Case Study: Achieving 15+ ROAS for a Kid Toy Brand</strong></h3>
+    <p><strong>Client Overview:</strong><span style="font-weight: 400;"> A kid toy brand sought to scale their business and achieve a profitable return on ad spend (ROAS).</span></p>
+    <p><strong>Challenge:</strong><span style="font-weight: 400;"> The brand needed a comprehensive approach to break through the competitive market and achieve a significant ROAS while increasing revenue.</span></p>
+    <p><strong>Solution:</strong></p>
+    <ol>
+    <li style="font-weight: 400;" aria-level="1"><strong>Market Research:</strong><span style="font-weight: 400;"> Conducted in-depth market research to understand target demographics and market trends.</span></li>
+    <li style="font-weight: 400;" aria-level="1"><strong>Comprehensive Marketing Strategy:</strong><span style="font-weight: 400;"> Developed a tailored marketing strategy focused on reaching the right audience.</span></li>
+    <li style="font-weight: 400;" aria-level="1"><strong>Branding:</strong><span style="font-weight: 400;"> Enhanced the brand's identity to appeal to parents and children alike.</span></li>
+    <li style="font-weight: 400;" aria-level="1"><strong>Creative Strategy:</strong><span style="font-weight: 400;"> Crafted a compelling creative strategy and produced engaging ad creatives.</span></li>
+    </ol>
+    <p><strong>Results:</strong></p>
+    <ul>
+    <li style="font-weight: 400;" aria-level="1"><strong>ROAS Achieved:</strong><span style="font-weight: 400;"> 15+ within a month</span></li>
+    <li style="font-weight: 400;" aria-level="1"><strong>Revenue Generated:</strong><span style="font-weight: 400;"> Over ₹4 Crore in 90 days</span></li>
+    </ul>
+    <strong>Key Insights:</strong><span style="font-weight: 400;"> Our strategic approach, including thorough market research, a strong branding initiative, and effective ad creatives, enabled the brand to achieve an outstanding ROAS and significant revenue growth in a short period.</span>`,
+  },
+  {
+    id: 3,
+    title: "Generating 330+ Leads with only $1900 Marketing Spend",
+    date: "Dec 1, 2023",
+    author: "Anshul Yadav",
+    position: "CEO",
+    image: "/images/ccc.jpeg",
+
+    shortDesc:
+      "The client sought to generate high-quality leads within a limited marketing budget....Read more",
+    content: `<h1><strong>Case Study: Generating 330+ Leads with only $1900 Marketing Spend</strong></h1>
+    <p><strong>Client Overview:</strong><span style="font-weight: 400;"> The client sought to generate high-quality leads within a limited marketing budget.</span></p>
+    <p><strong>Challenge:</strong><span style="font-weight: 400;"> To maximize lead generation and conversion with a modest budget of $1900 over three months.</span></p>
+    <p><strong>Solution:</strong></p>
+    <ol>
+    <li style="font-weight: 400;" aria-level="1"><strong>Understanding Client Needs:</strong><span style="font-weight: 400;"> We began by thoroughly understanding the client's demands and the market landscape.</span></li>
+    <li style="font-weight: 400;" aria-level="1"><strong>Marketing Strategy:</strong><span style="font-weight: 400;"> Developed a targeted marketing strategy to reach the most relevant audience segments.</span></li>
+    <li style="font-weight: 400;" aria-level="1"><strong>Content Creation:</strong><span style="font-weight: 400;"> Produced highly convertible content tailored to attract and engage potential leads.</span></li>
+    </ol>
+    <p><strong>Results:</strong></p>
+    <ul>
+    <li style="font-weight: 400;" aria-level="1"><strong>Leads Generated:</strong><span style="font-weight: 400;"> Over 330 leads</span></li>
+    <li style="font-weight: 400;" aria-level="1"><strong>Marketing Spend:</strong><span style="font-weight: 400;"> $1900</span></li>
+    <li style="font-weight: 400;" aria-level="1"><strong>Timeframe:</strong><span style="font-weight: 400;"> 3 months</span></li>
+    </ul>
+    <strong>Key Insights:</strong><span style="font-weight: 400;"> Our focused approach, including deep market understanding and strategic content creation, enabled us to deliver exceptional results. The campaign's success was marked by efficient budget utilization and effective lead generation, demonstrating our capability to achieve substantial outcomes even with limited resources.</span>`,
   },
 ];
