@@ -15,7 +15,7 @@ const CaseStudies = () => {
                 Case Studies
               </h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Explore our case studies to see how we've transformed businesses with innovative digital marketing strategies.
+              Explore our case studies to see how we&apos;ve transformed businesses with innovative digital marketing strategies.
               </p>
             </div>
           </div>

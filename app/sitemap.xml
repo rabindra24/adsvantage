@@ -23,5 +23,34 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-
+    <url>
+        <loc>https://adsvantage.vercel.app/about</loc>
+        <lastmod>2024-04-06T15:02:24.021Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://adsvantage.vercel.app/casestudies</loc>
+        <lastmod>2024-04-06T15:02:24.021Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://adsvantage.vercel.app/casestudies/1</loc>
+        <lastmod>2024-04-06T15:02:24.021Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://adsvantage.vercel.app/casestudies/2</loc>
+        <lastmod>2024-04-06T15:02:24.021Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://adsvantage.vercel.app/casestudies/3</loc>
+        <lastmod>2024-04-06T15:02:24.021Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
