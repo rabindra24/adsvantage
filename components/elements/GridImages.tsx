@@ -21,7 +21,7 @@ export default function GridImages() {
   const handleMoveNext = () => setIndex(nextIndex);
 
   return (
-    <Wrapper>
+    <Wrapper className="text-center">
       <h3 className="text-primary text-md uppercase mb-2">Our Clients Growth</h3>
       <h4 className="text-gray-200 capitalize font-bold md:text-4xl text-3xl  mb-10">
         Let&apos;s our Result speaks

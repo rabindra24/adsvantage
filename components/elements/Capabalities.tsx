@@ -49,7 +49,7 @@ const CapabalitiesCard = ({
 
 const Capabalities = () => {
   return (
-    <div className="relative py-10 " id="services">
+    <div className="relative  " id="services">
       <Wrapper className="relative z-10">
         <h2 className="uppercase text-primary mb-2 md:text-center text-xl">
           Our capabilities

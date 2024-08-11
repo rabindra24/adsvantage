@@ -7,47 +7,39 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
 
-import { Card, CardContent } from "@/components/ui/card";
 import Wrapper from "../custom/Wrapper";
 import Autoplay from "embla-carousel-autoplay";
 import { ClientsReview } from "@/constant";
+import Image from "next/image";
 
-const Reviews = () => {
-  const plugin = useRef(
-    Autoplay({ delay: 2000,  })
-  );
+const ProjectsCarosel = () => {
+  const plugin = useRef(Autoplay({ delay: 2000 }));
   return (
     <div id="review">
       <Wrapper className="text-center">
-        <h3 className="text-primary text-md uppercase mb-2">Why Choose Us</h3>
+        <h3 className="text-primary  text-md uppercase mb-2">Why Choose Us</h3>
         <h4 className="text-gray-200 font-bold md:text-4xl text-3xl  mb-10">
-          Listen From our clients
+          Projects That Define Us
         </h4>
         <Carousel
           className="w-full h-full"
           plugins={[plugin.current]}
-          onMouseEnter={plugin.current.stop}
-          onMouseLeave={plugin.current.reset}
+          opts={{loop : true}}
         >
-          <CarouselContent>
+          <CarouselContent className="gap-5">
             {ClientsReview.map((item, index) => (
-              <CarouselItem key={index} className="bg-transparent p-0">
+              <CarouselItem
+                key={index}
+                className="bg-transparent p-0 md:basis-1/2 lg:basis-1/3"
+              >
                 <div className="">
-                  <video
-                    src="https://static.videezy.com/system/resources/previews/000/000/168/original/Record.mp4"
-                    className="md:h-[500px] h-auto w-full "
-                    controls
-                    poster="https://reviewzone.media/wp-content/uploads/2022/12/Top-Product-Review-Channels-on-YouTube-1.jpg"
-                  ></video>
+                  <Image
+                    src="/images/banner.png"
+                    alt="banner.png"
+                    width="400"
+                    height="400"
+                  />
                 </div>
               </CarouselItem>
             ))}
@@ -60,4 +52,4 @@ const Reviews = () => {
   );
 };
 
-export default Reviews;
+export default ProjectsCarosel;

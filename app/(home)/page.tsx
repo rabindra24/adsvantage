@@ -13,11 +13,12 @@ import Contact from "@/components/elements/Contact";
 import Footer from "@/components/elements/Footer";
 import GridImages from "@/components/elements/GridImages";
 import CompanyLogoSlider from "@/components/elements/CompanyLogoSlider";
+import ProjectsCarosel from "@/components/elements/ProjectsCarosel";
 
 export default function Home() {
   return (
     <div className="bg-[#1A1F25] min-h-screen p-5 overflow-x-hidden pb-2">
-      <div className="w-full pt-24 pb-24 max-sm flex items-center justify-center flex-col space-y-5 relative top-0">
+      <div className="w-full pt-20 pb-24 max-sm flex items-center justify-center flex-col space-y-5 relative top-0">
         <div className="w-[300px] h-[300px] bg-primary opacity-30 rounded-full blur-3xl absolute top-24 "></div>
 
         <h1 className="text-gray-100 font-bold lg:text-8xl md:text-6xl text-5xl  text-center relative z-10">
@@ -56,7 +57,7 @@ export default function Home() {
         />
       </div>
       {/* Performance  */}
-      <div className="space-y-5 mb-10">
+      <div className="space-y-5 ">
         <h2 className="flex items-center text-center justify-center space-x-2 text-gray-300">
           <Image
             src={line}
@@ -65,14 +66,14 @@ export default function Home() {
             alt="line"
             className="h-[.1rem] mr-2"
           />
-          Our Performance is Certified By
+          Our Performance is Certified By & Partner&apos;s with
           <Image
             src={line}
             width={100}
             height={2}
             alt="line"
             className="h-[.1rem] ml-2"
-          />{" "}
+          />
         </h2>
         <BrandLogoSlider />
       </div>
@@ -102,6 +103,7 @@ export default function Home() {
       <Benefits />
       <Reviews />
       <GridImages />
+      <ProjectsCarosel/>
       <Contact />
       {/* // Scroll  */}
     </div>

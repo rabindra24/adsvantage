@@ -60,7 +60,7 @@ const BrandLogoSlider = () => {
           ))}
         </div>
       </div>
-      <div className=" w-full h-full p-3 absolute top-0 left-0 rounded-lg"></div>
+      {/* <div className=" w-full h-full p-3 absolute top-0 left-0 rounded-lg"></div> */}
     </Wrapper>
   );
 };
