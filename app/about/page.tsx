@@ -49,7 +49,7 @@ const UsersCard = ({
 
 const page = () => {
   return (
-    <div className="dark bg-[#1A1F25] text-foreground min-h-[100dvh] flex flex-col overflow-x-hidden">
+    <div className="dark bg-[#1A1F25] text-foreground min-h-[100dvh] flex flex-col overflow-x-hidden" data-scroll-container>
       <Wrapper>
         <main className="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24 flex flex-col items-center justify-center text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl mb-5 font-bold tracking-tight">

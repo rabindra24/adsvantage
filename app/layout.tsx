@@ -8,6 +8,7 @@ import Navbar from "@/components/elements/Navbar";
 import clsx from "clsx";
 import Footer from "@/components/elements/Footer";
 import SmoothScroll from "@/components/custom/SmoothScroll";
+import { Suspense } from "react";
 
 const outfit = Outfit({ subsets: ["latin"] });
 const url = "https://adsvantage.vercel.app";
@@ -56,12 +57,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={clsx(outfit.className, "bg-[#1A1F25]")}>
-        <SmoothScroll>
-          <Navbar />
-          {children}
-          <Footer />
-        </SmoothScroll>
+      <body className={clsx(outfit.className, "bg-[#1A1F25] ")}>
+        <Suspense fallback={<div>Loading...</div>}>
+          <SmoothScroll>
+            <Navbar />
+            {children}
+            <Footer />
+          </SmoothScroll>
+        </Suspense>
         <Toaster />
         <Analytics />
         <GoogleAnalytics measurementId={`${process.env.GOOGLE_ANALYTICS_ID}`} />

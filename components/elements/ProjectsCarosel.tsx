@@ -10,11 +10,11 @@ import {
 
 import Wrapper from "../custom/Wrapper";
 import Autoplay from "embla-carousel-autoplay";
-import { ClientsReview } from "@/constant";
+import { ClientsReview, projectsArrar } from "@/constant";
 import Image from "next/image";
 
 const ProjectsCarosel = () => {
-  const plugin = useRef(Autoplay({ delay: 2000 }));
+  const plugin = useRef(Autoplay({ delay: 2000,stopOnInteraction : false }));
   return (
     <div id="review">
       <Wrapper className="text-center">
@@ -26,21 +26,21 @@ const ProjectsCarosel = () => {
           className="w-full h-full"
           plugins={[plugin.current]}
           opts={{loop : true}}
+          aria-disabled
         >
           <CarouselContent className="gap-5">
-            {ClientsReview.map((item, index) => (
+            {projectsArrar.map((item, index) => (
               <CarouselItem
                 key={index}
-                className="bg-transparent p-0 md:basis-1/2 lg:basis-1/3"
+                className="bg-transparent p-0 md:basis-1/2 lg:basis-1/3 bg-red-500 max-h-[300px]"
               >
-                <div className="">
                   <Image
-                    src="/images/banner.png"
+                    src={item.image}
                     alt="banner.png"
-                    width="400"
-                    height="400"
+                    width="1000"
+                    height="800"
+                    className="w-full h-full object-cover object-top"
                   />
-                </div>
               </CarouselItem>
             ))}
           </CarouselContent>

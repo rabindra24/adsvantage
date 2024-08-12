@@ -9,7 +9,7 @@ const CaseStudiesById = ({ params }: { params: any }) => {
   const relatedCaseStudies = CaseStudy.filter((item) => item.id !== params.id);
 
   return (
-    <div className="flex flex-col min-h-dvh">
+    <div className="flex flex-col min-h-dvh" data-scroll-container>
       <header className="bg-muted py-6 md:py-12">
         <div className="container px-4 md:px-6">
           <div className="mx-auto max-w-3xl space-y-4">

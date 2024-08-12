@@ -14,10 +14,14 @@ import Footer from "@/components/elements/Footer";
 import GridImages from "@/components/elements/GridImages";
 import CompanyLogoSlider from "@/components/elements/CompanyLogoSlider";
 import ProjectsCarosel from "@/components/elements/ProjectsCarosel";
+import CaseStudie from "@/components/elements/CaseStudie";
 
 export default function Home() {
   return (
-    <div className="bg-[#1A1F25] min-h-screen p-5 overflow-x-hidden pb-2">
+    <div
+      className="bg-[#1A1F25] min-h-screen p-5 overflow-x-hidden pb-2"
+      data-scroll-container
+    >
       <div className="w-full pt-20 pb-24 max-sm flex items-center justify-center flex-col space-y-5 relative top-0">
         <div className="w-[300px] h-[300px] bg-primary opacity-30 rounded-full blur-3xl absolute top-24 "></div>
 
@@ -88,7 +92,7 @@ export default function Home() {
             alt="line"
             className="h-[.1rem] mr-2"
           />
-          We Work With
+          We Worked With
           <Image
             src={line}
             width={100}
@@ -103,7 +107,8 @@ export default function Home() {
       <Benefits />
       <Reviews />
       <GridImages />
-      <ProjectsCarosel/>
+      <ProjectsCarosel />
+      <CaseStudie />
       <Contact />
       {/* // Scroll  */}
     </div>

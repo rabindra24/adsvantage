@@ -6,7 +6,7 @@ import React from "react";
 
 const CaseStudies = () => {
   return (
-    <section className=" w-full relative py-12 md:py-24 lg:py-32 z-10 overflow-x-hidden">
+    <section className=" w-full relative py-12 md:py-24 lg:py-32 z-10 overflow-x-hidden" data-scroll-container>
       <Wrapper className=" ">
         <div className="container grid gap-8 px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">

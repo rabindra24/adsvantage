@@ -27,6 +27,18 @@ import {
 } from "@/public/icons";
 import { ads, seoImage, videoImage, webImage } from "@/public/images";
 import {
+  pro1,
+  pro2,
+  pro3,
+  pro4,
+  pro5,
+  pro6,
+  pro7,
+  pro8,
+  pro9,
+  pro10,
+} from "@/public/projects";
+import {
   Airplay,
   BriefcaseBusiness,
   Calendar,
@@ -177,43 +189,42 @@ export const Usp = [
     ),
     title: "Providing Chat BOTs FREE",
     content:
-      "Put all your requests in the design queue in Trello, and we’ll knock them out 1 by 1.",
+      "Try our free chatbot service for instant, 24/7 support. It’s easy to set up and perfect for engaging customers!",
   },
   {
     icons: (
       <Zap className="text-white w-10 h-10 rounded-full border-2 border-primary p-2" />
     ),
     title: "Best princess",
-    content: `High-end work from a dedicated team that &apos; s always available when you need it.`,
+    content: ` Discover unbeatable prices with our exclusive offers! Enjoy top-quality products at the best rates—where excellence meets affordability.`,
   },
   {
     icons: (
       <Airplay className="text-white w-10 h-10 rounded-full border-2 border-primary p-2" />
     ),
     title: "Fast. Responsive. Reliable.",
-    content: `Get regular updates on your projects and can expect to receive your projects within 2-3 days.`,
+    content: `Experience the ultimate in performance with our solutions—lightning-fast, highly responsive, and consistently reliable for all your needs.`,
   },
   {
     icons: (
       <Calendar className="text-white w-10 h-10 rounded-full border-2 border-primary p-2" />
     ),
     title: "Customer support lifetime",
-    content:
-      "Put all your requests in the design queue in Trello, and we’ll knock them out 1 by 1.",
+    content: "Enjoy peace of mind with our lifetime customer support. We're here for you whenever you need assistance, for as long as you need.",
   },
   {
     icons: (
       <CircleDollarSign className="text-white w-10 h-10 rounded-full border-2 border-primary p-2" />
     ),
     title: "Free maintenance ",
-    content: `Get the power of dedicated design team at fraction of the cost of full-time employee.`,
+    content: `Keep things running smoothly with our free maintenance service. We handle all updates and fixes, ensuring your system stays in top shape without extra cost.`,
   },
   {
     icons: (
       <Settings className="text-white w-10 h-10 rounded-full border-2 border-primary p-2" />
     ),
     title: "Other services for free EX lead Gen free for 14 Days",
-    content: `We design and build custom for you. We’re never starting from a template unless you want that? You don't, right?`,
+    content: `Try our lead generation service free for 14 days! Experience its full potential at no cost and see the results for yourself.`,
   },
   {
     icons: (
@@ -256,9 +267,9 @@ export const Services = [
   // },
   {
     image: webImage,
-    title: "Web development with free customized chat bot",
+    title: "Free Custom Chatbot For Website",
     content:
-      "From tech wizardry to seamless online experiences – enter the world of Technical Solutions. We transform digital hiccups into high-fives for your users.",
+      "Get a free chatbot for your website that engages visitors and makes interactions easier.",
     tags: [
       {
         title: "Wordpress",
@@ -273,9 +284,9 @@ export const Services = [
   },
   {
     image: ads,
-    title: "FB Ads with free creative and strategy creation",
+    title: "FB Ads: Free Creative & Strategy",
     content:
-      "Ready to make your brand the talk of the social town? Dive into our Social Media Management expertise and let your brand resonate across digital platforms!",
+      "Get free ad designs and strategy for Facebook ads, plus a 14-day free trial of our lead generation service.",
     tags: [
       {
         title: "Facebook Ads",
@@ -287,9 +298,9 @@ export const Services = [
   },
   {
     image: videoImage,
-    title: "High end video editing",
+    title: "Advanced Video Editing",
     content:
-      "Ready to make your brand the talk of the social town? Dive into our Social Media Management expertise and let your brand resonate across digital platforms!",
+      "Get top-quality video editing that makes your content shine with professional and engaging results.",
     tags: [
       {
         title: "Reels",
@@ -298,7 +309,7 @@ export const Services = [
         title: "Advertising Video",
       },
       {
-        title: "Advertising Video",
+        title: "Product's Shoot",
       },
     ],
   },
@@ -783,5 +794,50 @@ export const CaseStudy = [
     <li style="font-weight: 400;" aria-level="1"><strong>Timeframe:</strong><span style="font-weight: 400;"> 3 months</span></li>
     </ul>
     <strong>Key Insights:</strong><span style="font-weight: 400;"> Our focused approach, including deep market understanding and strategic content creation, enabled us to deliver exceptional results. The campaign's success was marked by efficient budget utilization and effective lead generation, demonstrating our capability to achieve substantial outcomes even with limited resources.</span>`,
+  },
+];
+
+// Project Array
+
+export const projectsArrar = [
+  {
+    id: 1,
+    image: pro1,
+  },
+  {
+    id: 2,
+    image: pro2,
+  },
+  {
+    id: 3,
+    image: pro3,
+  },
+  {
+    id: 4,
+    image: pro4,
+  },
+  {
+    id: 5,
+    image: pro5,
+  },
+  {
+    id: 6,
+    image: pro6,
+  },
+  {
+    id: 7,
+    image: pro7,
+  },
+  {
+    id: 8,
+    image: pro8,
+  },
+  {
+    id: 9,
+    image: pro9,
+  },
+  {
+    id: 10,
+    image: pro10,
   },
 ];
