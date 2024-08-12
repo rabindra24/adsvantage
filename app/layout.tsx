@@ -59,11 +59,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={clsx(outfit.className, "bg-[#1A1F25] ")}>
         {/* <Suspense fallback={<div>Loading...</div>}> */}
-          <SmoothScroll>
+          {/* <SmoothScroll> */}
             <Navbar />
             {children}
             <Footer />
-          </SmoothScroll>
+          {/* </SmoothScroll> */}
         {/* </Suspense> */}
         <Toaster />
         <Analytics />
