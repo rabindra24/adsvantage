@@ -58,13 +58,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={clsx(outfit.className, "bg-[#1A1F25] ")}>
-        <Suspense fallback={<div>Loading...</div>}>
+        {/* <Suspense fallback={<div>Loading...</div>}> */}
           <SmoothScroll>
             <Navbar />
             {children}
             <Footer />
           </SmoothScroll>
-        </Suspense>
+        {/* </Suspense> */}
         <Toaster />
         <Analytics />
         <GoogleAnalytics measurementId={`${process.env.GOOGLE_ANALYTICS_ID}`} />
