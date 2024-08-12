@@ -50,10 +50,7 @@ import {
 } from "lucide-react";
 
 export const NavElements = [
-  {
-    title: "How We Work",
-    link: "/#process",
-  },
+
   {
     title: "About Us",
     link: "/about",
@@ -65,6 +62,10 @@ export const NavElements = [
   {
     title: "Case Studies",
     link: "/casestudies",
+  },
+  {
+    title: "Projects",
+    link: "/#projects",
   },
   {
     title: "Contact",

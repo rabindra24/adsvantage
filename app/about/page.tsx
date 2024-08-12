@@ -95,7 +95,7 @@ const page = () => {
         </section>
         <div className="w-full flex items-center justify-center py-10">
           <CustomeButton
-            link="#contact"
+            link="/#contact"
             text="Let's Fix your problem"
             classNames="mx-auto text-white"
           />

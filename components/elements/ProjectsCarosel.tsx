@@ -16,7 +16,7 @@ import Image from "next/image";
 const ProjectsCarosel = () => {
   const plugin = useRef(Autoplay({ delay: 2000,stopOnInteraction : false }));
   return (
-    <div id="review">
+    <div id="projects">
       <Wrapper className="text-center">
         <h3 className="text-primary  text-md uppercase mb-2">Why Choose Us</h3>
         <h4 className="text-gray-200 font-bold md:text-4xl text-3xl  mb-10">
@@ -32,7 +32,7 @@ const ProjectsCarosel = () => {
             {projectsArrar.map((item, index) => (
               <CarouselItem
                 key={index}
-                className="bg-transparent p-0 md:basis-1/2 lg:basis-1/3 bg-red-500 max-h-[300px]"
+                className="bg-transparent p-0 md:basis-1/2 lg:basis-1/3  max-h-[300px]"
               >
                   <Image
                     src={item.image}

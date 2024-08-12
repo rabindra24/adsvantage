@@ -2,7 +2,7 @@ import React from "react";
 import Wrapper from "../custom/Wrapper";
 import Image from "next/image";
 import { logo } from "@/public/icons";
-import { Contact, Facebook, Instagram, Mail } from "lucide-react";
+import { Contact, Facebook, File, Instagram, Mail } from "lucide-react";
 import Link from "next/link";
 
 const Footer = () => {
@@ -10,7 +10,7 @@ const Footer = () => {
     <Wrapper className="max-sm:px-5">
       <div className="flex justify-between md:flex-row flex-col gap-5">
         <div>
-          <Link href="/">
+          <Link href="/" >
             <Image src={logo} width={200} height={50} alt="logo" />
           </Link>
           <p className="max-w-[400px]">
@@ -25,18 +25,35 @@ const Footer = () => {
               Mahato.rabindra.rm@gmail.com
             </a>
           </div>
-          <div className="flex gap-4 mb-5">
+          <div className="flex gap-4 ">
             <Contact />
             <a href="tel:7691961139">+91 7691961139</a>
           </div>
-          <div className="flex gap-4">
-            {/* <a href="">
-              <Facebook />
-            </a> */}
-            <a href="https://www.instagram.com/adsvantage.in/" aria-label="Instagram">
+         
+          <div className="flex gap-4 ">
+          
               <Instagram />
+            <a
+              href="https://www.instagram.com/adsvantage.in/"
+              aria-label="Instagram"
+              className="cursor-pointer"
+            >
+              Instagram
             </a>
           </div>
+          <div className="flex gap-4 ">
+            <File />
+            <Link href="/privacy-policy">Privacy Policy</Link>
+          </div>
+          {/* <div className="flex gap-4">
+            
+            <a
+              href="https://www.instagram.com/adsvantage.in/"
+              aria-label="Instagram"
+            >
+              <Instagram />
+            </a>
+          </div> */}
         </div>
       </div>
       <div className="text-center">
